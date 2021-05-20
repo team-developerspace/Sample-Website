@@ -1060,6 +1060,41 @@ ul li.filter{
     line-height: 3rem;
 }
 
+.open_source {
+	display : flex;
+	flex-wrap : wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.open_source_div {
+	margin: 25px;
+	padding: 25px;
+	width: 30%;
+	transition: transform .2s;
+	border: 0.3px dotted grey;
+	border-radius: 10px;
+}
+
+.open_source_div:hover {
+	transform: scale(1.1);
+	box-shadow: 1px 1px;
+}
+
+.open_source_div img {
+	max-width: 100%;
+	height: auto;
+}
+@media (max-width: 800px) {
+  .open_source {
+    flex-direction: column;
+  }
+  .open_source_div {
+	margin: 10px;
+	padding: 5px;
+	width: 50%;
+  } 
+}
 
 
 /*=======================================================================
